@@ -8,5 +8,26 @@
     android:layout_height="match_parent"
     tools:context="br.com.omperj.MainActivity">
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_remedios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fb_novo_remedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="handlerNovoRemedio"
+        android:backgroundTint="@android:color/white"
+        android:elevation="6dp"
+        android:src="@drawable/ic_playlist_add_black_24dp"
+        app:layout_anchor="@id/rv_remedios"
+        app:pressedTranslationZ="12dp"
+        app:useCompatPadding="true" />
 
 </RelativeLayout>

@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "br.com.omperj"
-        minSdkVersion 15
+        minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -30,11 +30,21 @@ dependencies {
         exclude module: 'support-compat'
     }
 
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.google.firebase:firebase-storage:10.2.0'
+    compile 'com.google.firebase:firebase-auth:10.2.0'
+    compile 'com.google.firebase:firebase-database:10.2.0'
+    compile 'com.github.jd-alexander:android-flat-button:v1.1'
     compile 'com.rengwuxian.materialedittext:library:2.1.4'
     compile 'com.github.rey5137:material:1.2.4'
+    compile 'com.theartofdev.edmodo:android-image-cropper:2.4.+'
+    compile 'com.iceteck.silicompressorr:silicompressor:2.0'
+    compile 'id.zelory:compressor:2.1.0'
 
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 }
+
+apply plugin: 'com.google.gms.google-services'
