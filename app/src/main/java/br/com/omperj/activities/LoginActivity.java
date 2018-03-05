@@ -53,8 +53,8 @@ public class LoginActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
-        mUsuarioRef = FirebaseDatabase.getInstance().getReference("usuarios")
-        .child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+        mUsuarioRef = FirebaseDatabase.getInstance().getReference("usuarios");
+        //.child(FirebaseAuth.getInstance().getCurrentUser().getUid());
     }
 
     public void handlerToRegisterActivity(View v){
@@ -93,7 +93,10 @@ public class LoginActivity extends AppCompatActivity {
         mFirebaseAuth.signInWithEmailAndPassword(email, senha).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
-                mUsuarioRef.addValueEventListener(new ValueEventListener() {
+
+                String userID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+                mUsuarioRef.child(userID).addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         Usuario usuario = dataSnapshot.getValue(Usuario.class);

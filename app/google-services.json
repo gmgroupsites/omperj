@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "417713504635",
-    "firebase_url": "https://omperj-3e07e.firebaseio.com",
-    "project_id": "omperj-3e07e",
-    "storage_bucket": "omperj-3e07e.appspot.com"
+    "project_number": "347325120828",
+    "firebase_url": "https://omperj-f657f.firebaseio.com",
+    "project_id": "omperj-f657f",
+    "storage_bucket": "omperj-f657f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:417713504635:android:8e6d68baf19d1960",
+        "mobilesdk_app_id": "1:347325120828:android:8e6d68baf19d1960",
         "android_client_info": {
           "package_name": "br.com.omperj"
         }
       },
       "oauth_client": [
         {
-          "client_id": "417713504635-q18jf8t4pld55sq1kuoat8h6pm2lf8l2.apps.googleusercontent.com",
+          "client_id": "347325120828-bvb1rd864u66comfmagplfqn8j3i5rvq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAwZlkzMfIponYobgcZOZLf551p7yYKftk"
+          "current_key": "AIzaSyALsWddHVyKyZMfvROd8inmk6BPvRWhTr0"
         }
       ],
       "services": {
